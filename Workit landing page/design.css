@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body{
+    overflow: hidden;
+}
+
 .top_side{
     background-color: #24053E;
     width: 100%;
@@ -15,7 +19,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 70%;
-    position: relative;
+    position: absolute;
     left: 250px;
     top: 40px;
 }
@@ -61,6 +65,18 @@
     position: absolute;
     left: 48%;
     top: 45%;
+}
+
+.lrnmore-btn button{
+    cursor: pointer;
+}
+
+.lrnmore-btn button:hover{
+    color: #44FFA1;
+    background-color: #24053E;
+    outline-color: solid;
+    box-shadow: 0 0 0 1px #44FFA1;
+    transition: 1.5s;
 }
 
 .lrnmore-btn button{
@@ -150,6 +166,13 @@
     font-family: 'Manrope', sans-serif;
     font-weight: 600;
 }
+.lower-side button:hover{
+    color: #44FFA1;
+    background-color: #24053E;
+    outline-color: solid;
+    box-shadow: 0 0 0 1px #44FFA1;
+    transition: 1.5s;
+}
 
 footer{
     display: flex;
@@ -170,4 +193,32 @@ footer img{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+}
+
+.socialmediaicons i{
+    color: #584d62;
+}
+
+.socialmediaicons i:hover{
+    color: #24053E;
+    transition: 1.5s;
+}
+
+.applyfracss:hover{
+    color: #44FFA1;
+    transition: 2.5s;
+}
+
+@media screen and (max-width: 1000px) {
+    /* .middle-side{
+        width: 100%;
+    }
+    .nav-bar{
+        width: 100%;
+    }
+    .nav-bar a{
+        margin-right: 360px;
+    } */
+
 }
