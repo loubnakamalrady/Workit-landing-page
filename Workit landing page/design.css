@@ -5,6 +5,7 @@
 
 body{
     overflow: hidden;
+    width: 100%;
 }
 
 .top_side{
@@ -18,9 +19,8 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
+    width: 100%;
     position: absolute;
-    left: 250px;
     top: 40px;
 }
 
