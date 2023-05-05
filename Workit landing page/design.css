@@ -30,9 +30,10 @@ body
 }
 
 .navclss{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0 30px;
 }
 
 .nav-bar a{
@@ -233,5 +234,143 @@ footer img{
 }
 
 @media screen and (max-width: 1000px) {
-    
+    .heading1{  
+        width: 60%;
+        left: 20%;
+        top: 20%;
+    }
+
+    .lrnmore-btn{
+        left: 40%;
+        top: 52%;
+    }
+
+    .top_side{
+        height: 600px;
+    }
+
+    .mobile-img{
+        width: 70%;
+        left: 15%;
+    }
+
+    .middle-div{
+        flex-direction: column;
+    }
+
+    #divswdth{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .prgrph{
+        width: 80%;
+        text-align: start;
+        margin-left: 4%;
+
+    }
+
+    .inner-side{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-side img{
+        width: 55%;
+    }
+
+    .footer-img{
+        position: absolute;
+        left: 6%;
+        top: 107%;
+    }
+
+    .footer-container{
+        width: 55%;
+        height: 235px;
+        left: 9%;
+    }
+
 }
+
+@media screen and (max-width: 400px) {
+    .heading1{  
+        font-size: x-large;
+        width: 80%;
+        left: 12%;
+        top: 25%;
+    }
+
+    .lrnmore-btn{
+        left: 35%;
+        top: 55%;
+    }
+
+    .top_side{
+        height: 400px;
+    }
+
+    .mobile-img{
+        width: 70%;
+        left: 15%;
+        top: 24%;
+    }
+
+
+
+    #divswdth{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner-side{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .prgrph{
+        width: 95%;
+        text-align: center;
+        margin-left: 4%;
+
+    }
+
+    .middle-div{
+        top: 7%;
+    }
+
+    .middle_side{
+        height: 1450px;
+    }
+
+    .footer-side img{
+        width: 85%;
+    }
+
+    .footer-img{
+        position: absolute;
+        left: 15%;
+        top: 104%;
+    }
+
+    .footer-container{
+        width: 65%;
+        height: 300px;
+        left: 1%;
+        text-align: center;
+    }
+
+    .footer-container p{
+        font-size: larger;  
+    }
+
+    .footer-container button{
+        padding: 15px 25px;
+    }
+
+}
+
