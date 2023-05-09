@@ -1,8 +1,14 @@
+/* padding and margin of all HTML elements to zero. 
+This ensures that there is no unwanted spacing around elements on the page. */
 *{
     padding: 0;
     margin: 0;
 }
 
+/* setting the width and height of the body element to 100% and
+ removs=ing any margin and padding. 
+ and setting the overflow-x property to "hidden", 
+ which prevents horizontal scrolling. */
 body
 {
     width: 100%;
@@ -12,6 +18,9 @@ body
     overflow-x: hidden; 
 }
 
+/*setting the position to "relative", which means it is positioned relative to its normal position.
+ and setting the background color to a dark purple, the width and height to 100%.
+ The border-radius property is used to create a rounded shape with a flat bottom on the element. */
 .top_side{
     position: relative;
     background-color: #24053E;
@@ -20,6 +29,10 @@ body
     border-radius: 100% 100% 100% 100% / 0% 0% 30% 30%  ;
 }
 
+/* The ".nav-bar" class sets the display property to "flex", which makes it a flex container.
+ It also sets the flex-direction to "row", which arranges its children in a horizontal row.
+  The justify-content property is set to "center", which centers its children horizontally.
+ The position is set to "absolute" and the top property to "5%", which positions the element 5% from the top of its container. */
 .nav-bar{
     display: flex;
     flex-direction: row;
@@ -29,6 +42,11 @@ body
     top: 5%;
 }
 
+/* The ".navclss" class sets the width to 100% and makes 
+it a flex container with justify-content set to "space-between".
+ This arranges its children with equal space between them.
+ The padding property is set to 0 on the top and bottom and 30px
+  on the left and right. */
 .navclss{
     width: 100%;
     display: flex;
@@ -36,6 +54,12 @@ body
     padding: 0 30px;
 }
 
+/* The ".nav-bar a" rule sets the color of links within the ".nav-bar" 
+container to white. 
+It also adds an underline to the text with a color of "#44FFA1" and
+ sets the distance of the underline from the text to 8 pixels.
+ The font-family is set to "'Manrope', sans-serif",
+ which specifies the typeface to be used for the text. */
 .nav-bar a{
     color: #FFFFFF;
     text-decoration: underline;
@@ -44,25 +68,44 @@ body
     font-family: 'Manrope', sans-serif;
 }
 
+/* The ".ring1" class sets the position to "absolute" and the top property to "100px",
+ which positions the element 100 pixels from the top of its container. 
+This class is likely used to position an image or other content within the 
+top section of the page. */
 .ring1{
     position: absolute;
     top: 100px;
 }
 
+/* The ".ring1 img" rule sets the width of the image within the ".ring1" container to 100%, 
+which ensures that the image takes up the full width of its container. */
 .ring1 img{
     width: 100%;
 }
 
+/* The ".ring2" class sets the position to "absolute" and the left property to "93.2%",
+ which positions the element 93.2% from the left of its container.
+  The top property is set to "35%", which positions the element 35% from the top of its container.
+ This class is likely used to position another image or content within the top section of the page. */
 .ring2{
     position: absolute;
     left: 93.2%;
     top: 35%;
 }
 
+/* The ".ring2 img" rule sets the width of the image within the ".ring2" container to 100%,
+ which ensures that the image takes up the full width of its container. */
 .ring2 img{
     width: 100%;
 }
 
+/* The ".heading1" class sets the font-family to "'Fraunces', serif" and the color to white.
+ The width is set to 30% and the font-size to 40 pixels. 
+ The position is set to "relative", which positions the element relative to its normal position.
+ The top property is set to "15%" and the left property is set to "37%",
+ which positions the element 15% from the top and 37% from the left of its container.
+ The text-align property is set to "center", which centers the text horizontally.
+ This class is likely used to style a heading within the top section of the page. */
 .heading1{
     font-family: 'Fraunces', serif;
     color: #FFFFFF;
@@ -74,6 +117,8 @@ body
     text-align: center;
 }
 
+/* The ".heading1 span" rule adds an underline to the text within the span tag with an offset of 8 pixels.
+ The text-decoration-thickness property is set to 2 pixels and the text-decoration-color is set to "#44FFA1". */
 .heading1 span{
     text-decoration: underline;
     text-underline-offset: 8px;
@@ -81,16 +126,26 @@ body
     text-decoration-color: #44FFA1;
 }
 
+/* The ".lrnmore-btn" class sets the position to "absolute" and the left property to "48%", 
+which positions the element 48% from the left of its container. 
+The top property is set to "45%", which positions the element 45% from the top of its container. 
+This class is likely used to style a button within the top section of the page. */
 .lrnmore-btn{
     position: absolute;
     left: 48%;
     top: 45%;
 }
 
+/* The ".lrnmore-btn button" rule sets the cursor to "pointer", 
+which changes the cursor to a hand when hovering over the button. */
 .lrnmore-btn button{
     cursor: pointer;
 }
 
+/* The ".lrnmore-btn button:hover" rule sets the color to "#44FFA1" and 
+the background-color to "#24053E" when hovering over the button. 
+It also adds a solid outline-color and a box-shadow with a transition duration of 1.5 seconds. 
+This creates a visual effect when hovering over the button. */
 .lrnmore-btn button:hover{
     color: #44FFA1;
     background-color: #24053E;
@@ -99,6 +154,11 @@ body
     transition: 1.5s;
 }
 
+/* The ".lrnmore-btn button" rule sets the padding to 15 pixels on the 
+top and bottom and 30 pixels on the left and right. The background-color
+ is set to "#44FFA1" and the border property is set to "none". 
+ The font-family is set to "'Manrope', sans-serif" 
+and the font-weight is set to 600, which makes the text bold. */
 .lrnmore-btn button{
     padding: 15px 30px;
     background-color: #44FFA1;
@@ -107,7 +167,12 @@ body
     font-weight: 600;
 }
 
-
+/* The ".mobile-img" class sets the width of the element to 50%. 
+The position is set to "absolute", which positions the element 
+relative to its nearest positioned ancestor.
+ The top property is set to "32%" and the left property is set to "27%", 
+ which positions the element 32% from the top and 27% from the left of its container.
+ This class is likely used to style an image for mobile devices. */
 .mobile-img{
     width: 50%;
     position: absolute;
@@ -116,6 +181,12 @@ body
 
 }
 
+/* The ".middle_side" class sets the position to "relative", 
+which means it is positioned relative to its normal position. 
+It also sets the background-color to a light purple, and sets 
+the width and height to 100%. 
+The border-radius property is used to create a rounded shape with a 
+flat top on the element. */
 .middle_side{
     position: relative;
     background-color: #FCF8FF;
@@ -124,6 +195,14 @@ body
     border-radius: 100% 100% 100% 100% / 0% 0% 20% 20%  ;
 }
 
+/* The ".middle-div" class sets the display property to "flex", 
+which makes it a flex container. It also sets the justify-content property
+ to "center", which centers its children horizontally. 
+ The position is set to "relative", which positions the element relative 
+ to its normal position. 
+ The top property is set to "15%", which positions the element 15% 
+ from the top of its container. This class is likely used to position 
+ content within the middle section of the page. */
 .middle-div{
     display: flex;
     justify-content: center;
@@ -132,6 +211,11 @@ body
 
 }
 
+/* The "#divswdth" selector sets the width to 40% and the text-align property to "center". 
+It also sets the display property to "flex" with a flex-direction of "column". 
+The justify-content and align-items properties are both set to "center", 
+which centers the element vertically and horizontally. 
+The color property is set to a dark purple.*/
 #divswdth{
     width: 40%;
     text-align: center;
@@ -142,22 +226,34 @@ body
     color: #24053E;
 }
 
+/* The "#divswdth div img" selector sets the padding to 25 pixels for
+images within the divs that are children of the "#divswdth" element. */
 #divswdth div img{
     padding: 25px;
 }
 
+/* The "#divswdth div h2, #divswdth div h2" selector sets the padding to 25 
+pixels for h2 and h3 elements within divs that are children of the "#divswdth" element. 
+It also sets the font-family to "'Fraunces', serif" and the font-weight to "32pt", 
+which makes the text bold. */
 #divswdth div h2 , #divswdth div h2 {
     padding: 25px;
     font-family: 'Fraunces', serif;
     font-weight: 32pt;
 }
 
+/* The ".prgrph" selector sets the width to 65% and the font-size to "large". 
+The font-family is set to "'Manrope', sans-serif", which specifies the typeface to be used for the text. 
+This class is likely used to style a paragraph or block of text within a div element. */
 .prgrph{
     width: 65%;
     font-size: large;
     font-family: 'Manrope', sans-serif;
 }
 
+/* a footer section of a website with a dark purple background color, white text, and a width of 34% of 
+its parent element's width. The footer is positioned 5% to the right of its normal position and has a margin of 15% at the top. 
+The child elements are centered horizontally within the footer section. */
 .footer-side{
     margin-top: 400px;
     display: flex;
@@ -177,6 +273,11 @@ body
     margin-top: 15%;
 }
 
+
+/* The CSS code is used to style a website footer section. It includes various rules for different elements within the footer, 
+such as setting margins and padding, adjusting colors and fonts, and controlling the behavior of elements when hovered over. 
+The code uses flexbox to align and position elements within the footer, and it applies filters and transitions to create visual effects. 
+The styles can be adjusted to fit the design and layout of the website. */
 .lower-side{
     margin-top: 35px;
 }
@@ -232,6 +333,12 @@ footer img{
     color: #44FFA1;
     transition: 2.5s;
 }
+
+/* The CSS code defines styles for a responsive layout on screens with a maximum width of 1000px. 
+Different rules are applied to specific HTML elements to adjust their size, positioning, and alignment when viewed on smaller screens. 
+For example, the rules change the width and position of headings and buttons, adjust the height of certain elements, stack child elements
+ vertically or horizontally, and change the text alignment and margin of paragraphs. These changes ensure a better user experience on smaller 
+ screens and help the webpage to remain visually appealing and easy to use on different devices. */
 
 @media screen and (max-width: 1000px) {
     .heading1{  
@@ -294,7 +401,15 @@ footer img{
     }
 
 }
-
+/* responsive layout on screens with a maximum width of 400px. 
+Different rules are applied to specific HTML elements to adjust their size, font, 
+positioning, and alignment when viewed on even smaller screens. For example, 
+the rules change the font size and width of headings, adjust the height of certain elements, 
+stack child elements vertically, and center align child elements. These changes ensure a better user experience on 
+even smaller screens and help the webpage to remain visually appealing and easy to use on different devices. 
+The rules also adjust the positioning and width of elements within the footer section and change the font size and padding of buttons, 
+among other things.
+ */
 @media screen and (max-width: 400px) {
     .heading1{  
         font-size: x-large;
